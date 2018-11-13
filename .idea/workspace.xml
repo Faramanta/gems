@@ -15,16 +15,19 @@
     <session id="9087583">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
           <entry key="html" value="1" />
+          <entry key="png" value="2" />
           <entry key="svg" value="3" />
         </counts>
       </usages-collector>
@@ -32,20 +35,21 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="HTML" value="1" />
+          <entry key="Image" value="2" />
           <entry key="SVG" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="879" />
-          <entry key="html" value="532" />
+          <entry key="css" value="1969" />
+          <entry key="html" value="1195" />
           <entry key="svg" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="879" />
-          <entry key="HTML" value="532" />
+          <entry key="CSS" value="1969" />
+          <entry key="HTML" value="1195" />
           <entry key="SVG" value="4" />
         </counts>
       </usages-collector>
@@ -53,22 +57,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="348">
+              <caret line="375" column="1" lean-forward="true" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+            <state relative-caret-position="3213">
+              <caret line="330" column="60" selection-start-line="330" selection-start-column="43" selection-end-line="330" selection-end-column="60" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -76,13 +83,30 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>EBGaramond</find>
+      <find>Garamond</find>
+      <find>body</find>
+      <find>med</find>
+      <find>card__info-block</find>
+      <find>.card__ttl</find>
+      <find>wrapper</find>
+      <find>.wrapper</find>
+      <find>slider</find>
+      <find>.card</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/img/cart.svg" />
         <option value="$PROJECT_DIR$/img/zoom.svg" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -98,12 +122,12 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,6 +149,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,6 +158,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Miniyanova\WORK\test\gems\img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,14 +188,21 @@
       <updated>1541657163719</updated>
       <workItem from="1541657165559" duration="9243000" />
       <workItem from="1541734307516" duration="624000" />
+      <workItem from="1541742797694" duration="600000" />
+      <workItem from="1541995188202" duration="1361000" />
+      <workItem from="1542012966107" duration="6931000" />
+      <workItem from="1542079352576" duration="670000" />
+      <workItem from="1542088545290" duration="2756000" />
+      <workItem from="1542102309023" duration="1118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9867000" />
+    <option name="totallyTimeSpent" value="23303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -206,19 +243,28 @@
     <entry file="file://$PROJECT_DIR$/img/zoom.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/ring.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/ring2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="348">
+          <caret line="375" column="1" lean-forward="true" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        <state relative-caret-position="3213">
+          <caret line="330" column="60" selection-start-line="330" selection-start-column="43" selection-end-line="330" selection-end-column="60" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
