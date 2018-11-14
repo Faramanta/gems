@@ -68,9 +68,7 @@ body *, html * {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.content.wrapper {
-    border-bottom: solid 3px #a88a8a;
-}
+
 .ttl2 {
     display: inline-block;
     vertical-align: middle;
@@ -567,7 +565,8 @@ body *, html * {
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 20px;
+    padding: 10px 20px 20px;
+    border-top: solid 3px #a88a8a;
 }
 .footer__phone-block {
     margin-top: 20px;
