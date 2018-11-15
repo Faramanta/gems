@@ -68,6 +68,10 @@ body *, html * {
     padding: 0 20px;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d469a81431ad6b3c126de1772dae6f99276db914
 .ttl2 {
     display: inline-block;
     vertical-align: middle;
@@ -578,6 +582,10 @@ body *, html * {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
+    padding: 10px 20px 20px;
+>>>>>>> d469a81431ad6b3c126de1772dae6f99276db914
     border-top: solid 3px #a88a8a;
 }
 .footer__phone-block {
