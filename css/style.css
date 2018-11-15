@@ -721,7 +721,13 @@ body *, html * {
 
 @media screen and (max-width: 1023px) {
     .header__phone {
-        font-size: 1.8em;
+        font-size: 1.6em;
+    }
+    .header-top__search {
+        width: 250px;
+    }
+    .header-top__link {
+        font-size: 1.5em;
     }
 }
 
@@ -734,8 +740,8 @@ body *, html * {
     }
     .header__mobile {
         display: block;
-
     }
+
     .header-mobile__top {
         background: #a88a8a;
         height: 48px;
@@ -842,7 +848,7 @@ body *, html * {
     .article:last-child {
         display: none;
     }
-    .footer {
+    .footer__in {
         display: block;
         padding: 5px 15px 15px;
     }
