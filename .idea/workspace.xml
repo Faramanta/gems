@@ -15,12 +15,13 @@
     <session id="9087583">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,15 +42,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2834" />
-          <entry key="html" value="1386" />
+          <entry key="css" value="3109" />
+          <entry key="html" value="1565" />
           <entry key="svg" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2834" />
-          <entry key="HTML" value="1386" />
+          <entry key="CSS" value="3109" />
+          <entry key="HTML" value="1565" />
           <entry key="SVG" value="4" />
         </counts>
       </usages-collector>
@@ -60,8 +61,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="785" column="25" selection-start-line="785" selection-start-column="25" selection-end-line="785" selection-end-column="25" />
+            <state relative-caret-position="466">
+              <caret line="835" column="23" selection-start-line="835" selection-start-column="23" selection-end-line="835" selection-end-column="23" />
+              <folding>
+                <element signature="e#12470#13055#0" />
+                <element signature="e#13057#13151#0" />
+                <element signature="e#13153#14720#0" />
+                <element signature="e#15551#16752#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,11 +76,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="335" column="53" selection-start-line="335" selection-start-column="35" selection-end-line="335" selection-end-column="53" />
+            <state relative-caret-position="331">
+              <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
               <folding>
-                <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -93,8 +99,6 @@
       <find>.wrapper</find>
       <find>.card</find>
       <find>article</find>
-      <find>.card</find>
-      <find>.card__block</find>
       <find>.card__block</find>
       <find>.spec-card__block</find>
       <find>.spec-card</find>
@@ -112,6 +116,8 @@
       <find>section</find>
       <find>.slider</find>
       <find>.footer</find>
+      <find>.content.wrapper</find>
+      <find>ttl2 center</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +172,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,18 +218,20 @@
       <workItem from="1542088545290" duration="2756000" />
       <workItem from="1542102309023" duration="1718000" />
       <workItem from="1542174995397" duration="1585000" />
-      <workItem from="1542180794280" duration="10279000" />
+      <workItem from="1542180794280" duration="10878000" />
+      <workItem from="1542253222196" duration="603000" />
+      <workItem from="1542265589224" duration="3526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35767000" />
+    <option name="totallyTimeSpent" value="40495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19345239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,19 +278,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="335" column="53" selection-start-line="335" selection-start-column="35" selection-end-line="335" selection-end-column="53" />
+        <state relative-caret-position="331">
+          <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="785" column="25" selection-start-line="785" selection-start-column="25" selection-end-line="785" selection-end-column="25" />
+        <state relative-caret-position="466">
+          <caret line="835" column="23" selection-start-line="835" selection-start-column="23" selection-end-line="835" selection-end-column="23" />
+          <folding>
+            <element signature="e#12470#13055#0" />
+            <element signature="e#13057#13151#0" />
+            <element signature="e#13153#14720#0" />
+            <element signature="e#15551#16752#0" />
+          </folding>
         </state>
       </provider>
     </entry>

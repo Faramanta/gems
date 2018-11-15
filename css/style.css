@@ -68,9 +68,6 @@ body *, html * {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.content.wrapper {
-    border-bottom: solid 3px #a88a8a;
-}
 .ttl2 {
     display: inline-block;
     vertical-align: middle;
@@ -87,7 +84,10 @@ body *, html * {
 .center {
     text-align: center !important;
 }
-
+.ttl2.center {
+    display: block;
+    text-align: center;
+}
 .header {
     max-width: 1196px;
     margin: auto;
@@ -564,10 +564,21 @@ body *, html * {
     margin-top: 12px;
 }
 .footer  {
+    max-width: 1196px;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
     flex-shrink: 0;
+
+    /*padding: 10px 0 20px;*/
+
+}
+.footer__in {
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 20px;
+    border-top: solid 3px #a88a8a;
 }
 .footer__phone-block {
     margin-top: 20px;
@@ -621,6 +632,64 @@ body *, html * {
 .footer__soc-insta {
     background-color: #fff;
 }
+.section-shild {
+    display: none;
+}
+.shild {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    padding: 3px 100px 2px 0;
+    height: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 7px;
+}
+.shild__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(112, 112, 112, 0.44);
+    margin-right: 7px;
+}
+.shild__percent svg,
+.shild__img {
+    width: 32px;
+}
+.shild__percent svg path {
+    fill: #beab32;
+}
+.shild__ttl {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 0.75;
+    text-align: left;
+    width: calc(100% - 50px);
+    display: block;
+    color: #000000;
+}
+.shild__btn {
+    position: absolute;
+    right: 0;
+    width: 93px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a88a8a;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.7;
+}
+
 
 @media screen and (max-width: 1279px) {
     .header__phone {
@@ -739,6 +808,7 @@ body *, html * {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 768px) {
     .header-mobile__btn {
         width: 55px;
@@ -761,6 +831,9 @@ body *, html * {
     }
     .section-spec {
         display: none;
+    }
+    .section-shild {
+        display: block;
     }
 }
 
