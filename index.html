@@ -4,9 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.gems.css">
+
 
     <title>Gems4u</title>
 </head>
@@ -19,8 +24,10 @@
                     <a href="tel:+74956968959" class="header__phone">+7(495)696-89-59(29)</a>
                 </div>
                 <div class="header-top__right">
-                    <a href="#" class="header-top__link">Доставка</a>
-                    <a href="#" class="header-top__link">Оплата</a>
+                    <div class="header-top__right-nav">
+                        <a href="#" class="header-top__link">Доставка</a>
+                        <a href="#" class="header-top__link">Оплата</a>
+                    </div>
                     <div class="header-top__search">
                         <input class="header-top__search-inp" placeholder="Поиск">
                     </div>
@@ -73,17 +80,26 @@
 
     <div class="slider__block">
         <div class="slider">
-            <div class="slide slide1">
-                <img src="">
-                <div class="slide__ttl"></div>
-            </div>
-            <div class="slide slide2">
-                <img src="">
-                <div class="slide__ttl"></div>
-            </div>
-            <div class="slide slide3">
-                <img src="">
-                <div class="slide__ttl"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="slider__item ">
+                    <div class="slide slide1">
+                        <img src="img/slide1.jpg" class="slide__img">
+                        <div class="slide__ttl">Камни</div>
+                    </div>
+                </div>
+                <div class="slider__item ">
+                    <div class="slide slide2">
+                        <img src="img/slide2.jpg" class="slide__img">
+                        <div class="slide__ttl">Ювелирные<br>
+                            изделия</div>
+                    </div>
+                </div>
+                <div class="slider__item ">
+                    <div class="slide slide3">
+                        <img src="img/slide3.jpg" class="slide__img">
+                        <div class="slide__ttl">Услуги</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -394,6 +410,9 @@
         </div>
     </footer>
 </div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 <script>
 </script>
