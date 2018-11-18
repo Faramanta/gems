@@ -13,5 +13,11 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).closest('.header-bot__btn-block').toggleClass('active');
   });
+
+  $('.js-open-pt').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $(this).next('.filter__drop').toggleClass('active');
+  });
 });
 

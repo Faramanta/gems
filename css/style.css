@@ -788,12 +788,40 @@ body *, html * {
     padding: 20px 0 10px;
 }
 .filter__ttl {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
     font-size: 25px;
     font-weight: 300;
     line-height: 0.96;
     color: #000000;
+}
+.filter__ttl-sign {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 2px;
+    background: #c6c6c6;
+}
+.filter__ttl-sign:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 14px;
+    top: -6px;
+    left: 6px;
+    background: #c6c6c6;
+}
+.filter__ttl.active .filter__ttl-sign:after {
+    display: none;
+}
+.filter__drop {
+    display: none;
+}
+.filter__drop.active {
+    display: block;
 }
 .cbx-block {
     position: relative;
