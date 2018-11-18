@@ -42,8 +42,8 @@
     z-index: 0;
     bottom: 8px;
     left: 50%;
-    width: 400px;
-    margin-left: -200px;
+    width: 200px;
+    margin-left: -100px;
     text-align: center;
 }
 .owl-theme .owl-dots .owl-dot {
