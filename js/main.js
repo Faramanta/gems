@@ -19,5 +19,17 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     $(this).next('.filter__drop').toggleClass('active');
   });
+
+  $('.js-submenu-open').on('click', function (e) {
+    e.preventDefault();
+    $('.header-bot__nav-link-open').removeClass('active');
+    $(this).closest('.header-bot__nav-link-open').toggleClass('active');
+  });
+
+    $(document).mouseup(function(event) {
+        if ($(event.target).closest('.header-bot__nav-link-list').length ) return;
+        $('.header-bot__nav-link-open').removeClass('active');
+    });
+
 });
 
