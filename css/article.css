@@ -1,0 +1,42 @@
+.article__top-img {
+    width: 100%;
+}
+.article-wrap {
+
+    width: 100%;
+    max-width: 1280px;
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+    margin: 27px auto 0;
+
+}
+.article-section {
+    padding: 20px 38px;
+}
+.article-section--white {
+    background: #fff;
+}
+.article__cnt {
+    font-size: 14px;
+    line-height: 1.29;
+    color: #707070;
+    margin: 0 0 20px 0;
+}
+.breadcrambs {
+    display: block;
+    margin-bottom: 17px;
+}
+.breadcrambs__link {
+    font-family: 'EB Garamond', Arial, serif;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.32;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #000000;
+}
+.breadcrambs__link span {
+    font-weight: normal;
+}

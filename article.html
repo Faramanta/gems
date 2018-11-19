@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owlcarousel/owl.theme.gems.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
 
 
 
@@ -198,10 +200,18 @@
 
                 <div class="header-bot__nav">
                     <div class="header-bot__nav-link-open">
-                        <a href="#" class="header-bot__nav-link">Камни</a>
-                    </div>
-                    <div class="header-bot__nav-link-open">
-                        <a href="#" class="header-bot__nav-link">Украшения</a>
+                        <span class="header-bot__nav-link js-submenu-open">КАТАЛОГ</span>
+                        <ul class="header-bot__nav-link-list">
+                            <li>
+                                <a href="#" class="header-bot__nav-link">КАТАЛОГ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header-bot__nav-link">КАМНИ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header-bot__nav-link">УКРАШЕНИЯ</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="header-bot__nav-link-open">
                         <span class="header-bot__nav-link js-submenu-open">УСЛУГИ</span>
@@ -388,288 +398,39 @@
         </div>
     </div>
 
-    <div class="slider__block">
-        <div class="slider">
-            <div class="owl-carousel owl-theme">
-                <div class="slider__item ">
-                    <div class="slide slide1">
-                        <img src="img/slide1.jpg" class="slide__img">
-                        <div class="slide__ttl">Камни</div>
-                    </div>
-                </div>
-                <div class="slider__item ">
-                    <div class="slide slide2">
-                        <img src="img/slide2.jpg" class="slide__img">
-                        <div class="slide__ttl">Ювелирные<br>
-                            изделия</div>
-                    </div>
-                </div>
-                <div class="slider__item ">
-                    <div class="slide slide3">
-                        <img src="img/slide3.jpg" class="slide__img">
-                        <div class="slide__ttl">Услуги</div>
-                    </div>
-                </div>
+
+
+    <div class="article-wrap">
+        <img class="article__top-img" src="img/article-bg.jpg">
+
+        <section class="article-section article-section--white">
+            <div class="breadcrambs">
+                <a href="#" class="breadcrambs__link">Основы гемологии <span>></span></a>
+                <a  class="breadcrambs__link">Простейшее оборудование для идентификации камней и минералов <span>></span></a>
             </div>
-        </div>
 
-        <div class="info-block info-block--deck">
-            <p class="info-block__ttl">Создай свою мечту</p>
-            <img src="img/ring.png" class="info-block__img">
-            <a href="#" class="info-block__btn">ПОДРОБНЕЕ</a>
-        </div>
-    </div>
-    <section class="section section-shild">
-        <div class="shild__block">
-            <a href="#" class="shild">
-                    <span class="shild__icon shild__percent">
-                        <img src="img/proc.svg" class="shild__img">
-                    </span>
-                <span class="shild__ttl">Специальные предложения</span>
-                <span class="shild__btn">ПОДРОБНЕЕ</span>
-            </a>
-            <a href="#" class="shild">
-                    <span class="shild__icon shild__percent">
-                        <img src="img/diamond-ico.png" class="shild__img">
-                    </span>
-                <span class="shild__ttl">Камни</span>
-                <span class="shild__btn">ПОДРОБНЕЕ</span>
-            </a>
-            <a href="#" class="shild">
-                    <span class="shild__icon shild__percent">
-                        <img src="img/ring.png" class="shild__img">
-                    </span>
-                <span class="shild__ttl">Ювелирные изделия</span>
-                <span class="shild__btn">ПОДРОБНЕЕ</span>
-            </a>
-        </div>
-    </section>
-    <div class="content wrapper">
+            <p class="article__cnt">Простейшее оборудование для идентификации камней и минералов</p>
+            <p class="article__cnt">Что есть основная задача геммолога? Описать чистоту и цвет камня, пусть не по правилам, а своими словами, может каждый. Пояснить, какой формы камень и какой огранкой огранен, даже не зная названий, тоже своими словами - может каждый.. Не каждый может определить, подвергался ли камень облагораживанию, но это - вторичная задача геммолога. А первичная задача - идентификация камня.</p>
 
+            <p class="article__cnt">Сразу надо оговориться. Геммолог и геолог находятся в абсолютно разном положении, и их ситуации нельзя даже сравнивать. Когда геолог держит в руках породу с кристаллом, и сама порода уже, плюс знание геологических особенностей местности, плюс масса другой дополнительной вводной информации, помогают ему безо всяких анализов почти наверное определить, что же у него в руках.</p>
 
+            <p class="article__cnt">Геммолог имеет дело с камнем, сырым или уже ограненным, с неизвестным (чаще всего) происхождением.. Нет под руками образцов пород, а если камень огранен - то ни характеристик скола, ни спайность, ни многие другие параметры не определить. Иголку в руки взять и попытаться сделать царапину, или рискнуть разрушить камень, царапая стекло - кому такое придет в голову...</p>
 
-        <section class="section section-spec">
-            <a href="#" class="ttl2">Специальное предложение ></a>
-            <div class="spec-card__block">
-                <a href="#" class="spec-card">
-                    <p class="spec-card__ttl">Апатит</p>
-                    <img src="img/apatit-zelenij.png" class="spec-card__img">
-                    <div class="spec-card__prise-block">
-                        <div class="spec-card__old-prise">10 000</div>
-                        <div class="spec-card__prise">от 7 000,00</div>
-                    </div>
-                </a>
-                <a href="#" class="spec-card">
-                    <p class="spec-card__ttl">Аметист</p>
-                    <img src="img/ametist.png" class="spec-card__img">
-                    <div class="spec-card__prise-block">
-                        <div class="spec-card__old-prise">10 000</div>
-                        <div class="spec-card__prise">от 7 000,00</div>
-                    </div>
-                </a>
-                <a href="#" class="spec-card">
-                    <p class="spec-card__ttl">Обручальное кольцо</p>
-                    <img src="img/ring3.png" class="spec-card__img">
-                    <div class="spec-card__prise-block">
-                        <div class="spec-card__old-prise">10 000</div>
-                        <div class="spec-card__prise">от 7 000,00</div>
-                    </div>
-                </a>
-                <a href="#" class="spec-card">
-                    <p class="spec-card__ttl">Апатит</p>
-                    <img src="img/apatit-zelenij.png" class="spec-card__img">
-                    <div class="spec-card__prise-block">
-                        <div class="spec-card__old-prise">10 000</div>
-                        <div class="spec-card__prise">от 7 000,00</div>
-                    </div>
-                </a>
-                <a href="#" class="spec-card">
-                    <p class="spec-card__ttl">Апатит</p>
-                    <img src="img/apatit-zelenij.png" class="spec-card__img">
-                    <div class="spec-card__prise-block">
-                        <div class="spec-card__old-prise">10 000</div>
-                        <div class="spec-card__prise">от 7 000,00</div>
-                    </div>
-                </a>
-            </div>
+            <p class="article__cnt">Вот тут и царство геммологии заступает на вахту, а царство геологии либо идет отпаиваться от экспедиций, либо возвращается обратно в поле.</p>
+
+            <p class="article__cnt">Кстати, геммологи тоже нередкие гости в поле. Не знаю, как в России, а в остальном мире добытчики камней камни добывают, но никуда их не возят. Чаще всего скупка сырья происходит там же, где оно и добывается. В лагерь старателей приходит скупщик, почти всегда он - очень квалифицированный геммолог, и на месте определяет, что есть что.</p>
+
+            <p class="article__cnt">Да, есть спекрометрия как самый надежный метод идентификации.. Но хотел бы я посмотреть на геммолога с его &quot;пальцами пианиста&quot;, которому в поле привычный к рюкзаку геолог помогает тащить до лагеря старателей рамановский, к примеру, спектрометр.. Заранее зная, что спектрометр откажется работать без электричества...</p>
+
+            <p class="article__cnt">Потому нам приходится (и это нам нравится) обходиться приборами, которые мы легко можем унести в кармане, и которые почти всегда (исключения есть, о них я расскажу) позволяют совершенно достоверно определить тип драгоценного камня.</p>
+
+            <p class="article__cnt">Важное дополнение: мы не определяем в таких случаях разновидность граната, мы определяем как факт, гранат это или не гранат. Детальное изучение - работа лабораторная, а начинать часто приходится на коленке.</p>
+
+            <p class="article__cnt">Для коленки и предназначено некоторое количество простейшего в использовании оборудования. Обучиться пользоваться им может абсолютно каждый.</p>
         </section>
 
-        <section class="section column">
-
-            <div class="carb-block__wrap">
-                <a href="#" class="ttl2">Камни ></a>
-                <div class="card__block card__block-stone">
-                    <a href="#" class="card">
-                        <div class="card__in">
-                            <p class="card__procent">30%</p>
-                            <img src="img/diamond-ico.png" class="card__img">
-                            <p class="card__ttl">Аметист</p>
-                            <div class="card__info-block">
-                                <div class="card__info-line">
-                                    <span class="card__info">Размер:</span>
-                                    <span class="card__info bold">2x2x2</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Вес:</span>
-                                    <span class="card__info bold">2 CTS</span>
-                                </div>
-                            </div>
-                            <div class="card__prise-block">
-                                <div class="card__prise">5 000 ₽</div>
-                            </div>
-                            <button class="card__btn">КУПИТЬ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card__in">
-                            <p class="card__procent">30%</p>
-                            <img src="img/diamond-ico.png" class="card__img">
-                            <p class="card__ttl">Аметист</p>
-                            <div class="card__info-block">
-                                <div class="card__info-line">
-                                    <span class="card__info">Размер:</span>
-                                    <span class="card__info bold">2x2x2</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Вес:</span>
-                                    <span class="card__info bold">2 CTS</span>
-                                </div>
-                            </div>
-                            <div class="card__prise-block">
-                                <div class="card__prise">5 000 ₽</div>
-                            </div>
-                            <button class="card__btn">КУПИТЬ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card__in">
-                            <p class="card__procent">30%</p>
-                            <img src="img/diamond-ico.png" class="card__img">
-                            <p class="card__ttl">Аметист</p>
-                            <div class="card__info-block">
-                                <div class="card__info-line">
-                                    <span class="card__info">Размер:</span>
-                                    <span class="card__info bold">2x2x2</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Вес:</span>
-                                    <span class="card__info bold">2 CTS</span>
-                                </div>
-                            </div>
-                            <div class="card__prise-block">
-                                <div class="card__prise">5 000 ₽</div>
-                            </div>
-                            <button class="card__btn">КУПИТЬ</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="carb-block__wrap">
-                <a href="#" class="ttl2">Украшения &gt;</a>
-                <div class="card__block card__block-jewelery">
-                    <a href="#" class="card">
-                        <div class="card__in">
-                            <p class="card__procent">30%</p>
-                            <img src="img/ring2.png" class="card__img">
-                            <p class="card__ttl">Кольцо обручальное  с бриллиантами</p>
-                            <div class="card__info-block">
-                                <div class="card__info-line">
-                                    <span class="card__info">Материал:</span>
-                                    <span class="card__info bold">Золото</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Цвет:</span>
-                                    <span class="card__info bold">Белый</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Проба:</span>
-                                    <span class="card__info bold">585</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Камни:</span>
-                                    <span class="card__info bold">Бриллианты</span>
-                                </div>
-                            </div>
-                            <div class="card__prise-block">
-                                <div class="card__prise">10 000 ₽</div>
-                            </div>
-                            <button class="card__btn">КУПИТЬ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card__in">
-                            <p class="card__procent">30%</p>
-                            <img src="img/ring2.png" class="card__img">
-                            <p class="card__ttl">Кольцо обручальное  с бриллиантами</p>
-                            <div class="card__info-block">
-                                <div class="card__info-line">
-                                    <span class="card__info">Материал:</span>
-                                    <span class="card__info bold">Золото</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Цвет:</span>
-                                    <span class="card__info bold">Белый</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Проба:</span>
-                                    <span class="card__info bold">585</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Камни:</span>
-                                    <span class="card__info bold">Бриллианты</span>
-                                </div>
-                            </div>
-                            <div class="card__prise-block">
-                                <div class="card__prise">10 000 ₽</div>
-                            </div>
-                            <button class="card__btn">КУПИТЬ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card__in">
-                            <p class="card__procent">30%</p>
-                            <img src="img/ring2.png" class="card__img">
-                            <p class="card__ttl">Кольцо обручальное  с бриллиантами</p>
-                            <div class="card__info-block">
-                                <div class="card__info-line">
-                                    <span class="card__info">Материал:</span>
-                                    <span class="card__info bold">Золото</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Цвет:</span>
-                                    <span class="card__info bold">Белый</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Проба:</span>
-                                    <span class="card__info bold">585</span>
-                                </div>
-                                <div class="card__info-line">
-                                    <span class="card__info">Камни:</span>
-                                    <span class="card__info bold">Бриллианты</span>
-                                </div>
-                            </div>
-                            <div class="card__prise-block">
-                                <div class="card__prise">10 000 ₽</div>
-                            </div>
-                            <button class="card__btn">КУПИТЬ</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <section class="section section-mobile">
-        <div class="info-block info-block--mobile">
-            <p class="info-block__ttl">Создай свою мечту</p>
-            <img src="img/ring.png" class="info-block__img">
-            <a href="#" class="info-block__btn">ПОДРОБНЕЕ</a>
-        </div>
-    </section>
-
-        <div class="content wrapper">
-        <section class="section">
-            <h2 class="ttl2 center">Полезно знать</h2>
+        <section class="article-section">
+            <h2 class="ttl2 center">Другие статьи</h2>
             <div class="article__block">
                 <a href="#" class="article">
                     <img src="img/article.png" class="article__img">
@@ -694,7 +455,9 @@
                 </a>
             </div>
         </section>
+
     </div>
+
 
     <footer class="footer ">
         <div class="footer__in">
@@ -725,6 +488,7 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
