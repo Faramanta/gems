@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Facebook" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-1{fill:#3b5998}.cls-2{fill:#fff;fill-rule:evenodd}
+        </style>
+    </defs>
+    <circle id="Oval-1" cx="18" cy="18" r="18" class="cls-1"/>
+    <path id="Fill-4" d="M30.189 47.687h6.375V32.351h4.782l.946-4.792h-5.728v-3.472a2.21 2.21 0 0 1 2.007-2.295h3.255V17h-3.99v.021c-6.242.2-7.525 3.365-7.636 6.691h-.012v3.846H27v4.792h3.189z" class="cls-2" transform="translate(-16.78 -14.417)"/>
+    <path id="Oval-1-2" d="M18 0A18 18 0 1 1 0 18 18 18 0 0 1 18 0z" class="cls-1" data-name="Oval-1"/>
+    <path id="Fill-4-2" d="M29.742 42.145h5.481V29.579h4.112l.813-3.927h-4.925v-2.845a1.844 1.844 0 0 1 1.726-1.88h2.8V17h-3.43v.018c-5.367.163-6.47 2.757-6.566 5.483h-.01v3.152H27v3.927h2.742z" class="cls-2" data-name="Fill-4" transform="translate(-15.309 -11.875)"/>
+</svg>
