@@ -273,12 +273,14 @@ body *, html * {
 .header-bot__nav-link-open {
     position: relative;
     border-right: 1px solid #e2e2e2;
+    width: 275px;
+    max-width: 25%;
 }
 .header-bot__nav-link {
     display: inline-block;
     vertical-align: middle;
     padding: 15px 20px;
-    width: 275px;
+    width: 100%;
     text-align: center;
     font-size: 19px;
     font-weight: 300;
