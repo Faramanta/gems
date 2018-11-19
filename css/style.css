@@ -88,11 +88,21 @@ body *, html * {
     text-align: center;
 }
 .header {
-    max-width: 1236px;
+    max-width: 1240px;
     margin: auto;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+}
+.logo {
+    display: block;
+    text-align: center;
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000000;
+    margin-bottom: 23px;
 }
 .header__desc {
     background: #fff;
