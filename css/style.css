@@ -1023,10 +1023,35 @@ input:checked + .label-cbx {
     .header__mobile {
         display: block;
     }
-
     .header-mobile__top {
         background: #a88a8a;
         height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px 0 0;
+    }
+    .header-mobile__search {
+        height: 100%;
+        width: calc(100% - 80px);
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-mobile__search-inp {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 14px;
+    }
+    .header-mobile__search-btn {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .header-mobile__search-btn svg {
+        width: 23px;
     }
     .header-mobile__bot {
         background: #fff;
