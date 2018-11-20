@@ -545,12 +545,15 @@ body *, html * {
         margin: 10px -5px 0;
     }
     .section {
-        margin: 10px -5px 0;
+        margin: 10px 0 0;
     }
     .carb-block__wrap {
         width: 100%;
         margin: 10px 0 0 0;
     }
+    /*.article__block {*/
+        /*margin: 20px 0 0;*/
+    /*}*/
 }
 
 @media screen and (max-width: 768px) {

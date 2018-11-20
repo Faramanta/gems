@@ -2,7 +2,6 @@
     width: 100%;
 }
 .article-wrap {
-
     width: 100%;
     max-width: 1280px;
     flex-grow: 1;
@@ -39,4 +38,15 @@
 }
 .breadcrambs__link span {
     font-weight: normal;
+}
+
+@media screen and (max-width: 1023px) {
+    /*.article__block {*/
+        /*padding: 0 5px;*/
+    /*}*/
+}
+@media screen and (max-width: 768px) {
+    .article-section {
+        padding: 20px 15px;
+    }
 }
