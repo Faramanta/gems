@@ -224,6 +224,7 @@
     font-size: 11px;
     color: #999999;
 }
+.catalog__filter,
 .filter {
     display: none;
     position: absolute;
@@ -409,6 +410,15 @@ input:checked + .label-cbx {
     border: 2px solid #d8d8d8;
     outline: none;
     box-sizing: border-box;
+    cursor: pointer;
+}
+.ui-slider .ui-slider-handle:hover {
+    background: #a88a8a;
+    border-color: #a88a8a;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+    background: #333;
+    border-color: #333333;
 }
 
 @media screen and (max-width: 1279px) {

@@ -1,0 +1,248 @@
+.catalog-wrap {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: flex-start;*/
+    margin-top: 7px;
+}
+.catalog__filter {
+    display: block;
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 305px;
+    margin-right: 20px;
+    padding: 10px 44px 22px 23px;
+}
+.catalog__filter .filter__seacrh-wrap {
+    height: 48px;
+}
+.catalog__filter .filter__search-inp {
+    padding: 0px 6px 9px 4px;
+}
+.catalog__filter .filter__search-inp::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+.catalog__filter .filter__search-inp::-moz-placeholder {
+    font-size: 14px;
+    color: #999999;
+}/*Firefox19+*/
+.catalog__filter .filter__search-inp:-moz-placeholder {
+    font-size: 14px;
+    color: #999999;
+}/*Firefox18-*/
+.catalog__filter .filter__search-inp:-ms-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+.catalog__filter .filter__search-btn {
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+.catalog__filter .filter__section {
+    padding: 10px 0 10px;
+}
+.catalog__filter .filter__ttl {
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    line-height: 1.26;
+    color: #000000;
+    margin-bottom: 2px;
+}
+.catalog__filter .cbx-block {
+    padding: 4px 0 3px;
+}
+.catalog__filter .in-stock .label-cbx-cnt {
+    font-size: 19px;
+}
+
+.catalog__filter .in-stock .cbx + .label-cbx::before {
+    top: 2px;
+}
+
+.catalog__sort-wrap {
+    display: block;
+}
+.catalog-sort {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 70px;
+}
+.catalog-sort__item {
+    font-family: 'EB Garamond', Arial, serif;
+    line-height: 1.11;
+    color: #000000;
+}
+.catalog-sort__item--choose {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 70px;
+    background: #fff;
+    padding: 8px 18px 7px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    font-size: 19px;
+}
+.catalog-sort__item--choose {
+
+}
+
+
+
+
+
+
+
+
+
+.catalog__content-wrap {
+    width: calc(100% - 320px);
+}
+.catalog__stone-item {
+    display: table;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 5px;
+}
+.catalog__stone-row {
+    display: table-row;
+}
+.catalog__stone-cell {
+    position: relative;
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    height: 166px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.catalog__stone-cell:first-child {
+    padding-left: 35px;
+    text-align: center;
+    width: 172px;
+}
+.catalog__stone-cell:nth-child(3) {
+    width: 166px;
+}
+.catalog__stone-cell:nth-child(4) {
+    width: 140px;
+    text-align: center;
+}
+.catalog__stone-cell:last-child {
+    width: 140px;
+}
+.catalog__stone-discount {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 19px;
+    line-height: 1.26;
+    color: #ffffff;
+    background: #a88a8a;
+    padding: 1px 2px 2px 2px;
+    font-weight: 500;
+}
+.catalog__stone-img-wrap {
+    width: 129px;
+    height: 95px;
+    box-sizing: border-box;
+    margin: 0 auto 6px;
+
+}
+.catalog__stone-img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.catalog__stone-type {
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
+    color: #000000;
+}
+.catalog__stone-name {
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    color: #000000;
+}
+.catalog__stone-spec {
+    display: table;
+    width: 100%;
+}
+.catalog__stone-spec-row {
+    display: table-row;
+}
+.catalog__stone-spec-cell {
+    display: table-cell;
+    font-size: 19px;
+    line-height: 1.26;
+    color: #000000;
+    box-sizing: border-box;
+}
+.catalog__stone-spec-cell:first-child {
+    width: 90px;
+}
+.catalog__stone-spec-cell:last-child {
+    font-family: 'EB Garamond', Arial, serif;
+
+}
+.catalog__stone-price-old {
+    position: relative;
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    color: #a88a8a;
+}
+.catalog__stone-price-old:after {
+    position: absolute;
+    content: '';
+    left: -5px;
+    right: -5px;
+    top: 10px;
+    height: 2px;
+    background: #a88a8a;
+
+}
+.catalog__stone-price {
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: center;
+    color: #000000;
+}
+.catalog__stone-btn {
+    display: block;
+    width: 117px;
+    padding: 12px 5px;
+    text-align: center;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #d3c4c4;
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: 0px;
+    color: #000000;
+    border: none;
+    margin: 0 auto 10px;
+}
+.catalog__stone-status {
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.11;
+    color: #ff0000;
+}
