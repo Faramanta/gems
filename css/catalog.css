@@ -1,7 +1,8 @@
 .catalog-wrap {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    /*align-items: flex-start;*/
+    align-items: flex-start;
     margin-top: 7px;
 }
 .catalog__filter {
@@ -59,14 +60,39 @@
 .catalog__filter .in-stock .cbx + .label-cbx::before {
     top: 2px;
 }
-
+.catalog__btn-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+.filter-open {
+    display: none;
+    border: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', Arial, serif;
+    color: #000000;
+    margin-right: 10px;
+    padding: 5px 6px 6px;
+    cursor: pointer;
+    outline: none;
+}
+.filter-open.active,
+.filter-open:hover {
+    background: #000;
+    color: #fff;
+}
+.catalog__sort-wrap--deck,
 .catalog__sort-wrap {
-    display: block;
+    display: inline-block;
 }
 .catalog-sort {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 70px;
+    margin-bottom: 7px;
 }
 .catalog-sort__item {
     font-family: 'EB Garamond', Arial, serif;
@@ -75,24 +101,67 @@
 }
 .catalog-sort__item--choose {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     margin-right: 70px;
     background: #fff;
-    padding: 8px 18px 7px;
+    padding: 4px 18px 7px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+.catalog-sort__item--choose span {
+    font-family: 'EB Garamond', Arial, serif;
     font-size: 19px;
-}
-.catalog-sort__item--choose {
 
 }
-
-
-
-
-
-
-
+.catalog__sort.active .catalog-sort__item--choose,
+.catalog-sort__item--choose:hover {
+    background: #000000;
+    color: #fff;
+}
+.catalog-sort__arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(45deg);
+    margin: 0 0 5px 5px;
+}
+.catalog__sort.active .catalog-sort__arrow,
+.catalog-sort__item--choose:hover .catalog-sort__arrow {
+    border-color: #fff;
+}
+.catalog-sort__list {
+    display: none;
+    position: absolute;
+    top: 43px;
+    width: 222px;
+    z-index: 10;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+}
+.catalog-sort__item {
+    background: #fff;
+    display: block;
+    padding: 5px 31px 5px 30px ;
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    line-height: 1.11;
+    color: #000000;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.catalog-sort__item.selected {
+    background: #fff url("../img/check20.svg") 4px center no-repeat;
+    background-size: 20px;
+}
+.catalog__sort.active .catalog-sort__list {
+    display: block;
+}
+.catalog__sort-wrap--mobile {
+    display: none;
+}
 
 
 .catalog__content-wrap {
@@ -142,16 +211,19 @@
     padding: 1px 2px 2px 2px;
     font-weight: 500;
 }
+.catalog__stone-discount--mobile {
+    display: none;
+}
 .catalog__stone-img-wrap {
     width: 129px;
     height: 95px;
     box-sizing: border-box;
     margin: 0 auto 6px;
-
 }
 .catalog__stone-img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
     box-sizing: border-box;
 }
 .catalog__stone-type {
@@ -163,6 +235,7 @@
     color: #000000;
 }
 .catalog__stone-name {
+    display: block;
     font-family: 'EB Garamond', Arial, serif;
     font-size: 30px;
     font-weight: bold;
@@ -171,6 +244,13 @@
     line-height: 0.67;
     letter-spacing: normal;
     color: #000000;
+    max-width: 230px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.catalog__stone-name--mobile {
+    display: none;
 }
 .catalog__stone-spec {
     display: table;
@@ -238,6 +318,7 @@
     color: #000000;
     border: none;
     margin: 0 auto 10px;
+    cursor: pointer;
 }
 .catalog__stone-status {
     font-family: 'EB Garamond', Arial, serif;
@@ -245,4 +326,129 @@
     font-weight: bold;
     line-height: 1.11;
     color: #ff0000;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .filter-open {
+        display: inline-block;
+    }
+    .catalog__filter {
+        position: absolute;
+        display: none;
+        top: 43px;
+    }
+    .catalog__filter.active {
+        display: block;
+    }
+    .catalog__content-wrap {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .catalog.wrapper {
+        padding: 0;
+    }
+    .catalog__btn-block {
+        padding: 0 6px;
+    }
+    .catalog__stone-img-wrap {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .catalog__stone-name--mobile {
+        display: block;
+        font-size: 19px;
+        line-height: 1.05;
+        max-width: 115px;
+    }
+    .catalog__stone-type {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .catalog__stone-cell {
+        height: 95px;
+        vertical-align: top;
+        padding: 7px 5px 2px;
+    }
+    .catalog__stone-cell:first-child {
+        padding-left: 5px;
+        width: 130px;
+    }
+    .catalog__stone-cell:nth-child(2) {
+        display: none;
+    }
+    .catalog__stone-cell:nth-child(3) {
+        width: auto;
+        padding-left: 40px;
+    }
+    .catalog__stone-discount--deck {
+        display: none;
+    }
+    .catalog__stone-discount--mobile {
+        display: block;
+        width: 34px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: auto;
+        font-size: 13px;
+        box-sizing: border-box;
+        padding: 2px 2px 2px 2px;
+    }
+    .catalog__stone-spec-cell {
+        font-size: 12px;
+    }
+    .catalog__stone-spec-cell:first-child {
+        width: 45px;
+    }
+    .catalog__stone-price-old {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    .catalog__stone-price-old:after {
+        top: 7px;
+    }
+    .catalog__stone-price {
+        font-size: 19px;
+        line-height: 1.32;
+    }
+    .catalog__stone-status {
+        display: none;
+    }
+    .catalog__stone-btn {
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        background: transparent url("../img/cart.jpg") no-repeat center;
+        box-shadow: none;
+        margin: auto;
+    }
+    .catalog__stone-cell:last-child {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .catalog__stone-name--mobile {
+        max-width: 80px;
+    }
+}
+@media screen and (max-width: 639px) {
+    .catalog__stone-cell:first-child {
+        padding-left: 5px;
+        width: 90px;
+    }
+    .catalog__stone-cell:nth-child(3) {
+        padding-left: 8px;
+    }
+    .catalog__stone-cell:nth-child(4) {
+        width: 100px;
+    }
+    .catalog__stone-cell:last-child {
+        width: 60px;
+        vertical-align: middle;
+    }
+
 }

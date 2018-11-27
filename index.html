@@ -175,9 +175,9 @@
                             <div class="filter__drop">
                                 <div class="filter__prise-slider">
                                     <div class="filter__prise-amount-wrap">
-                                        <input class="filter__prise-amount" type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                        <input class="filter__prise-amount amount1" type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
                                         <div class="filter__prise-amount-val-wrap">
-                                        <input class="filter__prise-amount" type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                        <input class="filter__prise-amount amount2" type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">
                                         <span class="filter__prise-amount-val">₽</span>
                                         </div>
                                     </div>
@@ -356,9 +356,9 @@
                             </a>
                             <div class="filter__prise-slider">
                                 <div class="filter__prise-amount-wrap">
-                                    <input class="filter__prise-amount" type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                    <input class="filter__prise-amount amount1" type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
                                     <div class="filter__prise-amount-val-wrap">
-                                        <input class="filter__prise-amount" type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                        <input class="filter__prise-amount amount2" type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">
                                         <span class="filter__prise-amount-val">₽</span>
                                     </div>
                                 </div>
@@ -730,18 +730,18 @@
 <script>
 
   $( function() {
-    $( "#slider-range" ).slider({
+    $( ".filter__slider" ).slider({
       range: true,
       min: 0,
       max: 100,
       values: [1, 100 ],
       slide: function( event, ui ) {
-        $( "#amount1" ).val( ui.values[ 0 ] );
-        $( "#amount2" ).val( ui.values[ 1 ] );
+        $( ".amount1" ).val( ui.values[ 0 ] );
+        $( ".amount2" ).val( ui.values[ 1 ] );
       }
     });
-    $( "#amount1" ).val( $( "#slider-range" ).slider( "values", 0 ) );
-    $( "#amount2" ).val( $( "#slider-range" ).slider( "values", 1 ) );
+    $( ".amount1" ).val( $( ".filter__slider" ).slider( "values", 0 ) );
+    $( ".amount2" ).val( $( ".filter__slider" ).slider( "values", 1 ) );
   } );
 </script>
 </body>
