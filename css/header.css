@@ -178,7 +178,6 @@
     color: #000000;
     cursor: pointer;
     box-sizing: border-box;
-    text-transform: uppercase;
 }
 .header-bot__nav-link-open:last-child {
     border-right: none;

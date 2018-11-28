@@ -1,4 +1,12 @@
 $(document).ready(function() {
+// slider
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        slideBy : 1,
+        loop: true,
+        autoplay: true,
+    });
+    // slider-end
 
     $('.js-open-filter').on('click', function (e) {
         e.preventDefault();
