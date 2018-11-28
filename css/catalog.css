@@ -11,7 +11,7 @@
     left: auto;
     top: auto;
     width: 305px;
-    margin-right: 20px;
+    margin-right: 15px;
     padding: 10px 44px 22px 23px;
 }
 .catalog__filter .filter__seacrh-wrap {
@@ -84,7 +84,6 @@
     background: #000;
     color: #fff;
 }
-.catalog__sort-wrap--deck,
 .catalog__sort-wrap {
     display: inline-block;
 }
@@ -92,7 +91,6 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 7px;
 }
 .catalog-sort__item {
     font-family: 'EB Garamond', Arial, serif;
@@ -102,7 +100,6 @@
 .catalog-sort__item--choose {
     position: relative;
     display: block;
-    margin-right: 70px;
     background: #fff;
     padding: 4px 18px 7px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -111,7 +108,6 @@
 .catalog-sort__item--choose span {
     font-family: 'EB Garamond', Arial, serif;
     font-size: 19px;
-
 }
 .catalog__sort.active .catalog-sort__item--choose,
 .catalog-sort__item--choose:hover {
@@ -140,6 +136,7 @@
     z-index: 10;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     box-sizing: border-box;
+
 }
 .catalog-sort__item {
     background: #fff;
@@ -159,24 +156,24 @@
 .catalog__sort.active .catalog-sort__list {
     display: block;
 }
-.catalog__sort-wrap--mobile {
-    display: none;
-}
-
-
 .catalog__content-wrap {
     width: calc(100% - 320px);
 }
-.catalog__stone-item {
+
+/*камни*/
+.catalog-stone__list {
+    margin-top: 7px;
+}
+.catalog-stone__item {
     display: table;
     width: 100%;
     background: #fff;
     margin-bottom: 5px;
 }
-.catalog__stone-row {
+.catalog-stone__row {
     display: table-row;
 }
-.catalog__stone-cell {
+.catalog-stone__cell {
     position: relative;
     display: table-cell;
     padding: 5px;
@@ -185,22 +182,22 @@
     box-sizing: border-box;
     text-align: left;
 }
-.catalog__stone-cell:first-child {
+.catalog-stone__cell:first-child {
     padding-left: 35px;
     text-align: center;
     width: 172px;
 }
-.catalog__stone-cell:nth-child(3) {
+.catalog-stone__cell:nth-child(3) {
     width: 166px;
 }
-.catalog__stone-cell:nth-child(4) {
+.catalog-stone__cell:nth-child(4) {
     width: 140px;
     text-align: center;
 }
-.catalog__stone-cell:last-child {
+.catalog-stone__cell:last-child {
     width: 140px;
 }
-.catalog__stone-discount {
+.catalog-stone__discount {
     position: absolute;
     left: 0;
     top: 0;
@@ -211,22 +208,22 @@
     padding: 1px 2px 2px 2px;
     font-weight: 500;
 }
-.catalog__stone-discount--mobile {
+.catalog-stone__discount--mobile {
     display: none;
 }
-.catalog__stone-img-wrap {
+.catalog-stone__img-wrap {
     width: 129px;
     height: 95px;
     box-sizing: border-box;
     margin: 0 auto 6px;
 }
-.catalog__stone-img {
+.catalog-stone__img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     box-sizing: border-box;
 }
-.catalog__stone-type {
+.catalog-stone__type {
     font-family: 'EB Garamond', Arial, serif;
     font-size: 19px;
     font-weight: bold;
@@ -234,7 +231,7 @@
     text-align: center;
     color: #000000;
 }
-.catalog__stone-name {
+.catalog-stone__name {
     display: block;
     font-family: 'EB Garamond', Arial, serif;
     font-size: 30px;
@@ -249,31 +246,30 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.catalog__stone-name--mobile {
+.catalog-stone__name--mobile {
     display: none;
 }
-.catalog__stone-spec {
+.catalog-stone__spec {
     display: table;
     width: 100%;
 }
-.catalog__stone-spec-row {
+.catalog-stone__spec-row {
     display: table-row;
 }
-.catalog__stone-spec-cell {
+.catalog-stone__spec-cell {
     display: table-cell;
     font-size: 19px;
     line-height: 1.26;
     color: #000000;
     box-sizing: border-box;
 }
-.catalog__stone-spec-cell:first-child {
+.catalog-stone__spec-cell:first-child {
     width: 90px;
 }
-.catalog__stone-spec-cell:last-child {
+.catalog-stone__spec-cell:last-child {
     font-family: 'EB Garamond', Arial, serif;
-
 }
-.catalog__stone-price-old {
+.catalog-stone__price-old {
     position: relative;
     font-family: 'EB Garamond', Arial, serif;
     font-size: 19px;
@@ -285,7 +281,7 @@
     margin: auto;
     color: #a88a8a;
 }
-.catalog__stone-price-old:after {
+.catalog-stone__price-old:after {
     position: absolute;
     content: '';
     left: -5px;
@@ -293,9 +289,8 @@
     top: 10px;
     height: 2px;
     background: #a88a8a;
-
 }
-.catalog__stone-price {
+.catalog-stone__price {
     font-family: 'EB Garamond', Arial, serif;
     font-size: 30px;
     font-weight: bold;
@@ -303,7 +298,7 @@
     text-align: center;
     color: #000000;
 }
-.catalog__stone-btn {
+.catalog-stone__btn {
     display: block;
     width: 117px;
     padding: 12px 5px;
@@ -320,18 +315,188 @@
     margin: 0 auto 10px;
     cursor: pointer;
 }
-.catalog__stone-status {
+.catalog-stone__status {
     font-family: 'EB Garamond', Arial, serif;
     font-size: 19px;
     font-weight: bold;
     line-height: 1.11;
     color: #ff0000;
 }
+/*камни--end*/
 
 
+
+
+
+
+/*Украшения*/
+.catalog-jewelry__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 7px -3px 0;
+}
+.catalog-jewelry__item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 25%;
+    max-width: 215px;
+    min-height: 250px;
+    margin: 5px 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.catalog-jewelry__item-wrap {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 5px 14px 15px;
+    text-align: center;
+    background: #fff;
+}
+.catalog-jewelry__img-wrap {
+    width: 150px;
+    height: 130px;
+    box-sizing: border-box;
+    margin: 0 auto 4px;
+}
+.catalog-jewelry__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.catalog-jewelry__name {
+    display: block;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 14px;
+    font-family: 'Quicksand Light', Arial, serif;
+    height: 40px;
+    overflow: hidden;
+}
+.catalog-jewelry__sub-name,
+.catalog-jewelry__name--mobile {
+    display: none;
+}
+.catalog-jewelry__spec {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.catalog-jewelry__spec--mobile {
+    display: none;
+}
+.catalog-jewelry__spec--deck {
+    display: none;
+
+}
+.catalog-jewelry__spec-row {
+    display: table-row;
+}
+.catalog-jewelry__spec-cell {
+    display: table-cell;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #000000;
+}
+.catalog-jewelry__spec-cell:first-child {
+    width: 84px;
+    padding: 1px 0 1px 14px;
+}
+.catalog-jewelry__price-old {
+    position: relative;
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    color: #a88a8a;
+}
+.catalog-jewelry__price-old:after {
+    position: absolute;
+    content: '';
+    left: -5px;
+    right: -5px;
+    top: 10px;
+    height: 2px;
+    background: #a88a8a;
+}
+.catalog-jewelry__price {
+    font-family: 'EB Garamond', Arial, serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: center;
+    color: #000000;
+    margin-top: -9px;
+}
+.catalog-jewelry__btn {
+    position: absolute;
+    bottom: 18px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/cart.jpg") no-repeat center;
+    border: none;
+    cursor: pointer;
+}
+.catalog-jewelry__item:hover {
+    z-index: 10;
+}
+.catalog-jewelry__item:hover .catalog-jewelry__item-wrap {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.catalog-jewelry__item:hover .catalog-jewelry__spec--deck {
+    display: table;
+}
+
+/*Украшения--end*/
+
+@media screen and (max-width: 1260px) {
+    .catalog-jewelry__item {
+        width: 24%;
+        min-height: 287px;
+    }
+    .catalog-jewelry__item-wrap {
+        padding: 5px 10px 15px;
+    }
+    .catalog-jewelry__name {
+        font-size: 16px;
+        height: 33px;
+    }
+    .catalog-jewelry__spec-cell:first-child {
+        padding: 1px 0;
+    }
+    .catalog-jewelry__btn {
+        position: relative;
+        right: auto;
+        bottom: auto;
+    }
+}
 @media screen and (max-width: 1150px) {
     .filter-open {
         display: inline-block;
+    }
+    .catalog-sort__item--choose {
+        padding: 4px 9px 7px 6px;
+    }
+    .catalog-sort__list {
+        width: 203px;
+    }
+    .catalog-sort__item {
+        padding: 5px 6px 5px 23px;
+    }
+    .catalog-sort__item.selected {
+        background-position: 2px center;
+        background-size: 18px;
     }
     .catalog__filter {
         position: absolute;
@@ -344,6 +509,9 @@
     .catalog__content-wrap {
         width: 100%;
     }
+    .catalog-jewelry__item {
+        max-width: initial;
+    }
 }
 @media screen and (max-width: 900px) {
     .catalog.wrapper {
@@ -352,42 +520,42 @@
     .catalog__btn-block {
         padding: 0 6px;
     }
-    .catalog__stone-img-wrap {
+    .catalog-stone__img-wrap {
         width: 50px;
         height: 50px;
         margin: 0 auto;
     }
-    .catalog__stone-name--mobile {
+    .catalog-stone__name--mobile {
         display: block;
         font-size: 19px;
         line-height: 1.05;
         max-width: 115px;
     }
-    .catalog__stone-type {
+    .catalog-stone__type {
         font-size: 12px;
         font-weight: 400;
         line-height: 1;
     }
-    .catalog__stone-cell {
+    .catalog-stone__cell {
         height: 95px;
         vertical-align: top;
         padding: 7px 5px 2px;
     }
-    .catalog__stone-cell:first-child {
+    .catalog-stone__cell:first-child {
         padding-left: 5px;
         width: 130px;
     }
-    .catalog__stone-cell:nth-child(2) {
+    .catalog-stone__cell:nth-child(2) {
         display: none;
     }
-    .catalog__stone-cell:nth-child(3) {
+    .catalog-stone__cell:nth-child(3) {
         width: auto;
         padding-left: 40px;
     }
-    .catalog__stone-discount--deck {
+    .catalog-stone__discount--deck {
         display: none;
     }
-    .catalog__stone-discount--mobile {
+    .catalog-stone__discount--mobile {
         display: block;
         width: 34px;
         position: relative;
@@ -398,27 +566,31 @@
         box-sizing: border-box;
         padding: 2px 2px 2px 2px;
     }
-    .catalog__stone-spec-cell {
+    .catalog-stone__spec-cell {
         font-size: 12px;
     }
-    .catalog__stone-spec-cell:first-child {
+    .catalog-stone__spec-cell:first-child {
         width: 45px;
     }
-    .catalog__stone-price-old {
+    .catalog-jewelry__price-old,
+    .catalog-stone__price-old {
         font-size: 14px;
         line-height: 1.14;
     }
-    .catalog__stone-price-old:after {
+    .catalog-jewelry__price-old:after,
+    .catalog-stone__price-old:after {
         top: 7px;
     }
-    .catalog__stone-price {
+    .catalog-jewelry__price,
+    .catalog-stone__price {
         font-size: 19px;
         line-height: 1.32;
+        margin: 0;
     }
-    .catalog__stone-status {
+    .catalog-stone__status {
         display: none;
     }
-    .catalog__stone-btn {
+    .catalog-stone__btn {
         font-size: 0;
         width: 40px;
         height: 40px;
@@ -426,29 +598,122 @@
         box-shadow: none;
         margin: auto;
     }
-    .catalog__stone-cell:last-child {
+    .catalog-stone__cell:last-child {
         width: 80px;
+    }
+    .catalog-jewelry__list {
+        display: block;
+        margin: 7px 0 0;
+    }
+    .catalog-jewelry__item {
+        width: 100%;
+        max-width: initial;
+        margin: 0 0 6px;
+        height: 95px;
+        min-height: initial;
+    }
+    .catalog-jewelry__item-wrap {
+        position: relative;
+    }
+    .catalog-jewelry__item {
+        display: table;
+        width: 100%;
+        margin: 0 0 5px;
+    }
+    .catalog-jewelry__item:hover .catalog-jewelry__item-wrap {
+        box-shadow: none;
+    }
+    .catalog-jewelry__item-wrap {
+        display: table-row;
+    }
+    .catalog-jewelry__item-cell {
+        display: table-cell;
+        vertical-align: top;
+        padding: 7px 5px 2px;
+        box-sizing: border-box;
+    }
+    .catalog-jewelry__item-cell:first-child {
+        padding-left: 5px;
+        width: 130px;
+        text-align: left;
+    }
+    .catalog-jewelry__item-cell:nth-child(2) {
+        display: none;
+    }
+    .catalog-jewelry__item-cell:nth-child(3)  {
+        width: auto;
+        padding-left: 40px;
+    }
+    .catalog-jewelry__item-cell:nth-child(4)  {
+        width: 140px;
+        text-align: center;
+    }
+    .catalog-jewelry__item-cell:last-child {
+        width: 80px;
+    }
+    .catalog-jewelry__img-wrap {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .catalog-jewelry__spec--mobile {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .catalog-jewelry__spec-cell {
+        font-size: 12px;
+        line-height: 1.26;
+    }
+    .catalog-jewelry__spec-cell:first-child {
+        width: 45px;
+        padding: 0;
+    }
+    .catalog-jewelry__item:hover .catalog-jewelry__spec--deck {
+        display: none;
+    }
+    .catalog-jewelry__name--mobile {
+        display: block;
+        height: auto;
+        margin-bottom: 0;
+        font-family: 'EB Garamond', Arial, serif;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .catalog-jewelry__sub-name {
+        position: absolute;
+        display: block;
+        font-size: 12px;
+        line-height: 1.08;
+        color: #000000;
+    }
+    .catalog-jewelry__price {
+        font-size: 19px;
+        line-height: 1.32;
     }
 }
 @media screen and (max-width: 768px) {
-    .catalog__stone-name--mobile {
+    .catalog-stone__name--mobile {
         max-width: 80px;
     }
 }
 @media screen and (max-width: 639px) {
-    .catalog__stone-cell:first-child {
+    .catalog-jewelry__item-cell:first-child,
+    .catalog-stone__cell:first-child {
         padding-left: 5px;
         width: 90px;
     }
-    .catalog__stone-cell:nth-child(3) {
+    .catalog-jewelry__item-cell:nth-child(3),
+    .catalog-stone__cell:nth-child(3) {
         padding-left: 8px;
     }
-    .catalog__stone-cell:nth-child(4) {
-        width: 100px;
+    .catalog-jewelry__item-cell:nth-child(4),
+    .catalog-stone__cell:nth-child(4) {
+        width: 85px;
     }
-    .catalog__stone-cell:last-child {
-        width: 60px;
+    .catalog-jewelry__item-cell:last-child,
+    .catalog-stone__cell:last-child {
+        width: 50px;
         vertical-align: middle;
     }
-
 }
