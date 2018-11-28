@@ -3,14 +3,14 @@
     width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
-    margin: 63px auto 0;
+    margin: 28px auto 0;
 }
 .footer__in {
     display: flex;
     justify-content: space-between;
     padding: 0 0 20px;
     margin: 0 20px;
-    border-top: solid 3px #a88a8a;
+    border-top: solid 2px #a88a8a;
 }
 .footer__phone-block {
     margin-top: 7px;
