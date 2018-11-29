@@ -60,6 +60,17 @@
 .catalog__filter .in-stock .cbx + .label-cbx::before {
     top: 2px;
 }
+.catalog__filter .in-stock .cbx:checked + .label-cbx::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    top: 6px;
+    left: 4px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-45deg);
+}
 .catalog__btn-block {
     display: flex;
     justify-content: flex-start;
@@ -238,7 +249,6 @@
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0.67;
     letter-spacing: normal;
     color: #000000;
     max-width: 230px;

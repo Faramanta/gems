@@ -80,6 +80,7 @@ body *, html * {
     box-sizing: border-box;
     flex-grow: 1;
     -webkit-box-flex: 1;
+    z-index: 0;
 }
 .ttl2 {
     display: inline-block;
@@ -644,6 +645,9 @@ body *, html * {
     }
     .card__block-jewelery .card__info-line {
         justify-content: space-between;
+    }
+    .card__info-block {
+        height: 70px;
     }
     .card__block-stone .card__info:first-child,
     .card__block-jewelery .card__info-block .card__info {

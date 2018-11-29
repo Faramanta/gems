@@ -4,7 +4,7 @@
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-
+    z-index: 10;
 }
 .logo {
     display: block;
@@ -209,19 +209,19 @@
 /*filter*/
 
 .filter__search-inp::-webkit-input-placeholder {
-    font-size: 11px;
+    font-size: 14px;
     color: #999999;
 }
 .filter__search-inp::-moz-placeholder {
-    font-size: 11px;
+    font-size: 14px;
     color: #999999;
 }/*Firefox19+*/
 .filter__search-inp:-moz-placeholder {
-    font-size: 11px;
+    font-size: 14px;
     color: #999999;
 }/*Firefox18-*/
 .filter__search-inp:-ms-input-placeholder {
-    font-size: 11px;
+    font-size: 14px;
     color: #999999;
 }
 .catalog__filter,
@@ -233,8 +233,8 @@
     width: 285px;
     background: #ffffff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    z-index: 20;
-    padding:  22px;
+    z-index: 30;
+    padding:  10px 25px 22px 24px;
     box-sizing: border-box;
 }
 .header-bot__btn-block.active .filter {
@@ -242,7 +242,7 @@
 }
 .filter__seacrh-wrap {
     border-bottom:1px solid #e2e2e2;
-    height: 72px;
+    height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,12 +252,12 @@
     height:100%;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 6px;
+    padding: 0px 5px 9px 5px;
     outline: none;
 }
 .filter__search-btn {
     width: 31px;
-    margin-top: 7px;
+    margin-bottom: 4px;
     border: none;
     background: #fff;
     padding: 0;
@@ -265,16 +265,18 @@
 }
 .filter__section {
     border-bottom:1px solid #e2e2e2;
-    padding: 20px 0 10px;
+    padding: 10px 0 10px;
 }
 .filter__ttl {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-    font-size: 25px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    font-family: 'EB Garamond', Arial, serif;
+
     font-weight: 300;
-    line-height: 0.96;
+    line-height: 1.26;
     color: #000000;
 }
 .filter__ttl-sign {
@@ -305,7 +307,7 @@
 }
 .cbx-block {
     position: relative;
-    padding: 4px 0 5px;
+    padding: 3px 0 3px;
     display: block;
     width: auto !important;
 }
@@ -342,7 +344,6 @@
     border-left: 2px solid #000;
     transform: rotate(-45deg);
 }
-
 input:checked + .label-cbx {
     color: #000;
 }
@@ -353,15 +354,14 @@ input:checked + .label-cbx {
     font-size: 15px;
     color: #000000;
     font-family: 'EB Garamond', Arial, serif;
-
 }
 .filter__prise-slider {
-    margin: 17px 0 29px;
+    margin: 9px 0 20px;
 }
 .filter__prise-amount-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 .filter__prise-amount {
     width: 85px;
