@@ -504,7 +504,7 @@ body *, html * {
     .section.column {
         margin: 20px -5px 0;
     }
-    .carb-block__wrap {
+    .card-block__wrap {
         padding: 0 5px;
     }
     .card:last-child,
@@ -548,7 +548,7 @@ body *, html * {
     .card__block {
         margin: 4px auto 0;
     }
-    .carb-block__wrap {
+    .card-block__wrap {
         width: 100%;
         margin: 3px 0 0 0;
     }
