@@ -56,7 +56,6 @@
 .catalog__filter .in-stock .label-cbx-cnt {
     font-size: 19px;
 }
-
 .catalog__filter .in-stock .cbx + .label-cbx::before {
     top: 2px;
 }
@@ -147,7 +146,6 @@
     z-index: 10;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     box-sizing: border-box;
-
 }
 .catalog-sort__item {
     background: #fff;
@@ -336,9 +334,6 @@
 
 
 
-
-
-
 /*Украшения*/
 .catalog-jewelry__list {
     display: flex;
@@ -402,7 +397,6 @@
 }
 .catalog-jewelry__spec--deck {
     display: none;
-
 }
 .catalog-jewelry__spec-row {
     display: table-row;

@@ -64,7 +64,6 @@
     box-sizing: border-box;
     background: url("../img/zoom.svg") no-repeat calc(100% - 9px) center ;
     background-size: 28px;
-
 }
 .header-top__search-inp {
     display: block;
@@ -134,7 +133,6 @@
     height: 3px;
     background: #333;
     position: relative;
-
 }
 .header-bot__btn-line:before {
     position: absolute;
@@ -332,7 +330,6 @@
     background: #fff;
     border: 1px solid #000;
 }
-
 .cbx:checked + .label-cbx::after {
     content: '';
     position: absolute;
@@ -347,7 +344,6 @@
 input:checked + .label-cbx {
     color: #000;
 }
-
 .label-cbx-cnt {
     display: inline-block;
     vertical-align: top;
@@ -433,7 +429,6 @@ input:checked + .label-cbx {
     }
 }
 
-
 @media screen and (max-width: 1023px) {
     .header-top__right-nav {
         margin: 3px 15px 0 0;
@@ -452,6 +447,7 @@ input:checked + .label-cbx {
          padding: 15px 15px;
     }
 }
+
 @media screen and (max-width: 900px) {
     .header {
         padding: 0;
@@ -546,6 +542,7 @@ input:checked + .label-cbx {
         font-weight: 500;
     }
 }
+
 @media screen and (max-width: 768px) {
     .header-mobile__btn {
         width: 55px;
@@ -554,11 +551,13 @@ input:checked + .label-cbx {
         padding: 5px 8px;
     }
 }
+
 @media screen and (max-width: 639px) {
     .logo {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 479px) {
     .logo {
         font-size: 11px;

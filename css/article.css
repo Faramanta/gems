@@ -7,7 +7,6 @@
     flex-grow: 1;
     -webkit-box-flex: 1;
     margin: 27px auto 0;
-
 }
 .article-section {
     padding: 20px 38px;
@@ -40,11 +39,6 @@
     font-weight: normal;
 }
 
-@media screen and (max-width: 1023px) {
-    /*.article__block {*/
-        /*padding: 0 5px;*/
-    /*}*/
-}
 @media screen and (max-width: 768px) {
     .article-section {
         padding: 20px 15px;
