@@ -119,8 +119,7 @@
     font-family: 'EB Garamond', Arial, serif;
     font-size: 19px;
 }
-.catalog__sort.active .catalog-sort__item--choose,
-.catalog-sort__item--choose:hover {
+.catalog__sort.active .catalog-sort__item--choose {
     background: #000000;
     color: #fff;
 }
@@ -134,8 +133,7 @@
     transform: rotate(45deg);
     margin: 0 0 5px 5px;
 }
-.catalog__sort.active .catalog-sort__arrow,
-.catalog-sort__item--choose:hover .catalog-sort__arrow {
+.catalog__sort.active .catalog-sort__arrow {
     border-color: #fff;
 }
 .catalog-sort__list {
