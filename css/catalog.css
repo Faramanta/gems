@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 7px;
+    margin-top: 15px;
 }
 .catalog__filter {
     display: block;
@@ -41,10 +41,10 @@
     margin-bottom: 7px;
 }
 .catalog__filter .filter__section {
-    padding: 10px 0 10px;
+    padding: 12px 0 8px;
 }
 .catalog__filter .filter__ttl {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 19px;
     line-height: 1.26;
     color: #000000;
@@ -57,14 +57,14 @@
     font-size: 19px;
 }
 .catalog__filter .in-stock .cbx + .label-cbx::before {
-    top: 2px;
+    top: 0px;
 }
 .catalog__filter .in-stock .cbx:checked + .label-cbx::after {
     content: '';
     position: absolute;
     width: 10px;
     height: 6px;
-    top: 6px;
+    top: 4px;
     left: 4px;
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
@@ -74,6 +74,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: start;
+    margin-top: 15px;
 }
 .filter-open {
     display: none;
@@ -89,10 +90,7 @@
     cursor: pointer;
     outline: none;
 }
-.filter-open.active,
 .filter-open:hover {
-    background: #000;
-    color: #fff;
 }
 .catalog__sort-wrap {
     display: inline-block;
@@ -103,7 +101,7 @@
     vertical-align: middle;
 }
 .catalog-sort__item {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     line-height: 1.11;
     color: #000000;
 }
@@ -111,16 +109,15 @@
     position: relative;
     display: block;
     background: #fff;
-    padding: 4px 18px 7px;
+    padding: 7px 18px 8px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 .catalog-sort__item--choose span {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 19px;
 }
-.catalog__sort.active .catalog-sort__item--choose,
-.catalog-sort__item--choose:hover {
+.catalog__sort.active .catalog-sort__item--choose {
     background: #000000;
     color: #fff;
 }
@@ -134,8 +131,7 @@
     transform: rotate(45deg);
     margin: 0 0 5px 5px;
 }
-.catalog__sort.active .catalog-sort__arrow,
-.catalog-sort__item--choose:hover .catalog-sort__arrow {
+.catalog__sort.active .catalog-sort__arrow {
     border-color: #fff;
 }
 .catalog-sort__list {
@@ -150,8 +146,8 @@
 .catalog-sort__item {
     background: #fff;
     display: block;
-    padding: 5px 31px 5px 30px ;
-    font-family: 'EB Garamond', Arial, serif;
+    padding: 7px 5px 7px 30px ;
+    font-family: 'Garamond', Arial, serif;
     font-size: 19px;
     line-height: 1.11;
     color: #000000;
@@ -187,24 +183,27 @@
     display: table-cell;
     padding: 5px;
     vertical-align: middle;
-    height: 166px;
+    height: 150px;
     box-sizing: border-box;
     text-align: left;
 }
 .catalog-stone__cell:first-child {
-    padding-left: 35px;
+    padding-left: 39px;
     text-align: center;
     width: 172px;
 }
+.catalog-stone__cell:nth-child(2) {
+    width: 165px;
+}
 .catalog-stone__cell:nth-child(3) {
-    width: 166px;
+    padding-left: 30px;
 }
 .catalog-stone__cell:nth-child(4) {
-    width: 140px;
+    width: 133px;
     text-align: center;
 }
 .catalog-stone__cell:last-child {
-    width: 140px;
+    width: 148px;
 }
 .catalog-stone__discount {
     position: absolute;
@@ -224,7 +223,7 @@
     width: 129px;
     height: 95px;
     box-sizing: border-box;
-    margin: 0 auto 6px;
+    margin: 0 auto;
 }
 .catalog-stone__img {
     width: 100%;
@@ -233,7 +232,7 @@
     box-sizing: border-box;
 }
 .catalog-stone__type {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 19px;
     font-weight: bold;
     line-height: 1.11;
@@ -242,18 +241,21 @@
 }
 .catalog-stone__name {
     display: block;
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 30px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
     color: #000000;
-    max-width: 230px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    line-height: 1.1;
+    /*max-width: 230px;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    text-align: center;
 }
+.catalog-stone__type--mobile,
 .catalog-stone__name--mobile {
     display: none;
 }
@@ -521,8 +523,15 @@
     .catalog.wrapper {
         padding: 0;
     }
+    .catalog-wrap {
+        margin-top: 7px;
+    }
     .catalog__btn-block {
         padding: 0 6px;
+        margin-top: 0;
+    }
+    .catalog-stone__list {
+        margin-top: 13px;
     }
     .catalog-stone__img-wrap {
         width: 50px;
@@ -535,7 +544,8 @@
         line-height: 1.05;
         max-width: 115px;
     }
-    .catalog-stone__type {
+    .catalog-stone__type--mobile {
+        display: block;
         font-size: 12px;
         font-weight: 400;
         line-height: 1;
@@ -547,7 +557,7 @@
     }
     .catalog-stone__cell:first-child {
         padding-left: 5px;
-        width: 130px;
+        width: 100px;
     }
     .catalog-stone__cell:nth-child(2) {
         display: none;
@@ -607,7 +617,7 @@
     }
     .catalog-jewelry__list {
         display: block;
-        margin: 7px 0 0;
+        margin: 13px 0 0;
     }
     .catalog-jewelry__item {
         width: 100%;
@@ -697,9 +707,10 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .catalog-stone__name--mobile {
-        max-width: 80px;
-    }
+
+    /*.catalog-stone__name--mobile {*/
+        /*max-width: 80px;*/
+    /*}*/
 }
 @media screen and (max-width: 639px) {
     .catalog-jewelry__item-cell:first-child,

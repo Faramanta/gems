@@ -1,15 +1,19 @@
+.article-page {
+    background: #fff;
+}
 .article__top-img {
     width: 100%;
+    margin-bottom: 33px;
 }
 .article-wrap {
     width: 100%;
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     flex-grow: 1;
     -webkit-box-flex: 1;
-    margin: 27px auto 0;
+    margin: 51px auto 0;
 }
 .article-section {
-    padding: 20px 38px;
+    padding: 22px 0;
 }
 .article-section--white {
     background: #fff;
@@ -20,27 +24,33 @@
     color: #707070;
     margin: 0 0 20px 0;
 }
-.breadcrambs {
-    display: block;
-    margin-bottom: 17px;
+.grey-block {
+    background: transparent;
 }
-.breadcrambs__link {
-    font-family: 'EB Garamond', Arial, serif;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 1.32;
-    letter-spacing: 0.4px;
-    text-align: left;
-    color: #000000;
+.grey-block .article__block {
+    margin: 20px 15px 180px;
 }
-.breadcrambs__link span {
-    font-weight: normal;
+@media screen and (max-width: 900px) {
+    .grey-block .article__block {
+        margin: 20px 15px 33px;
+    }
 }
-
 @media screen and (max-width: 768px) {
+
     .article-section {
         padding: 20px 15px;
+    }
+
+    .grey-block .article {
+        margin-bottom: 23px;
+    }
+    .grey-block .article:nth-child(2) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .grey-block .article__block {
+        display: block;
     }
 }

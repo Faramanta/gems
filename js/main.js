@@ -1,5 +1,5 @@
 $(document).ready(function() {
-// slider
+  // slider
     $('.owl-carousel').owlCarousel({
         items: 1,
         slideBy : 1,
@@ -31,23 +31,6 @@ $(document).ready(function() {
     });
 
 
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true,
-        vertical: true
-    });
-
   $('.js-open-sort').on('click', function (e) {
     e.preventDefault();
     // $('.catalog__sort').removeClass('active');
@@ -70,9 +53,6 @@ $(document).ready(function() {
        $(this).toggleClass('active');
     });
 
-
-
-
     // счетчик
     $('.js-count-btn-minus').on('click', function () {
        var inpValue = $(this).parent().find('.prod__count-value');
@@ -94,3 +74,20 @@ $(document).ready(function() {
 
 });
 
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  vertical: true
+});

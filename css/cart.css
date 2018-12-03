@@ -1,16 +1,18 @@
 .cart.wrapper {
-    padding: 40px 20px;
+    padding: 16px 20px 40px;
 }
 .cart__ttl {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 30px;
     line-height: 1.13;
     color: #000000;
     font-weight: normal;
+    margin: 14px 0 0;
 }
 .cart__flex {
     display: flex;
     justify-content: space-between;
+    margin: 13px auto 0;
 }
 .cart__prod-list {
     margin-right: 18px;
@@ -40,17 +42,34 @@
     padding: 20px 10px;
 }
 .cart__tbl-ttl {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 19px;
     line-height: 1.11;
     color: #000000;
 }
 .cart__tbl-head {
-    margin: 33px 0 15px;
+    margin: 0 0 15px;
     border-bottom: 1px solid #707070;
 }
+.cart__cell:first-child {
+    width: 150px;
+    padding: 22px 20px 18px 23px;
+}
+.cart__cell:nth-child(2) {
+    text-align: left;
+    padding-left: 40px;
+}
+.cart__cell:nth-child(3) {
+    width: 128px;
+}
+.cart__cell:nth-child(4) {
+    width: 175px;
+}
+.cart__cell:last-child {
+    width: 175px;
+}
 .cart__tbl-head .cart__cell {
-    padding: 10px 10px 18px;
+    padding: 2px 10px 18px;
 }
 .cart__tbl-item {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -71,23 +90,6 @@
     object-fit: contain;
     box-sizing: border-box;
 }
-.cart__cell:first-child {
-    width: 150px;
-    padding: 22px 20px 18px 23px;
-}
-.cart__cell:nth-child(2) {
-    text-align: left;
-    padding-left: 40px;
-}
-.cart__cell:nth-child(3) {
-    width: 128px;
-}
-.cart__cell:nth-child(4) {
-    width: 175px;
-}
-.cart__cell:last-child {
-    width: 175px;
-}
 .cart__name {
     display: block;
     max-width: 200px;
@@ -101,7 +103,7 @@
 }
 .cart__price-old {
     position: relative;
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 19px;
     font-weight: bold;
     line-height: 1.11;
@@ -116,7 +118,7 @@
     content: '';
     left: -5px;
     right: -5px;
-    top: 10px;
+    top: 8px;
     height: 2px;
     background: #a88a8a;
 }
@@ -130,7 +132,7 @@
     margin-top: -5px;
 }
 .cart__btn {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     width: 118px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: rgba(168, 138, 138, 0.5);
@@ -139,7 +141,7 @@
     color: #000000;
     border: none;
     text-align: center;
-    padding: 12px 10px;
+    padding: 14px 10px 10px;
     box-sizing: border-box;
     cursor: pointer;
     letter-spacing: -0.4px;
@@ -161,7 +163,7 @@
     margin-bottom: 21px;
 }
 .cart__summary-sum {
-    font-family: 'EB Garamond', Arial, serif;
+    font-family: 'Garamond', Arial, serif;
     font-size: 30px;
     font-weight: bold;
     line-height: 1.13;
