@@ -607,6 +607,9 @@ input:checked + .label-cbx {
     .header-mobile__btn {
         width: 55px;
     }
+    .header-mobile__top .header-bot__btn-block {
+        width: 34px;
+    }
     .header-mobile__bot {
         padding: 5px 8px;
     }
