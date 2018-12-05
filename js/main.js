@@ -13,6 +13,12 @@ $(document).ready(function() {
         $(this).closest('.header-bot__btn-block').toggleClass('active');
     });
 
+    $('.js-open-menu').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
+    });
+
     $('.js-open-pt').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
@@ -23,6 +29,12 @@ $(document).ready(function() {
         e.preventDefault();
         $('.header-bot__nav-link-open').removeClass('active');
         $(this).closest('.header-bot__nav-link-open').toggleClass('active');
+    });
+
+    $('.js-open-mobile-submenu').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.mobile-menu__submenu').toggleClass('active');
     });
 
     $(document).mouseup(function(event) {
@@ -62,7 +74,7 @@ $(document).ready(function() {
        inpValue.change();
        return false;
     });
-    $('.js-count-btn-plus').click(function () {
+    $('.js-count-btn-plus').on('click', function () {
         var inpValue = $(this).parent().find('.prod__count-value');
         inpValue.val(parseInt(inpValue.val()) + 1);
         inpValue.change();
@@ -70,6 +82,15 @@ $(document).ready(function() {
     });
 
     // счетчик--end
+
+
+
+    $('.header-mobile__search-inp').on('focus', function () {
+        $(this).addClass('active');
+    });
+    $('.header-mobile__search-inp').on('blur', function () {
+        $(this).removeClass('active');
+    });
 
 
 });
